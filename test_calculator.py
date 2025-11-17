@@ -15,7 +15,7 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
-        self.assertEqual(mul(0, 2), 2)
+        self.assertEqual(mul(0, 2), 0)
         self.assertEqual(mul(-3, 3), -9)
         self.assertEqual(mul(-2, -2), 4)
 
@@ -33,14 +33,14 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self): # 3 assertions
-        self.assertEquals(logarithm(2, 8), 3)
-        self.assertEquals(logarithm(10, 1000), 3)
-        self.assertEquals(logarithm(-3, 9), 2)
+        self.assertEqual(logarithm(2, 8), 3)
+        self.assertEqual(round(logarithm(10, 1000)), 3)
+        self.assertEqual(logarithm(3, 9), 2)
 
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
         with self.assertRaises(ZeroDivisionError):
-            logarithm(5, 1)
+            logarithm(1, 5)
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
