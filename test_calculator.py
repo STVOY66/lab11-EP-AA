@@ -1,3 +1,7 @@
+# https://github.com/STVOY66/lab11-EP-AA
+# Partner 1: Ethan Pauly
+# Partner 2: Aidan Arjune (Absent)
+
 import unittest
 from calculator import *
 
