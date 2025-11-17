@@ -32,6 +32,7 @@ def div(a, b):
         return b / a
 
 def exp(a, b):
+    return math.pow(a, b)
 
 def logarithm(a, b):
     return math.log(b, a)
